@@ -11,5 +11,11 @@ let getComputerChoice = function () {
         return "scissors";
     } 
 }
+getComputerChoice()
 
-console.log(getComputerChoice());
+let getHumanChoice = function () {
+    let userInput = prompt("Enter your move: Rock, Paper, Scissors");
+    console.log("You chose: " + userInput);
+}
+getHumanChoice();
+
