@@ -31,6 +31,11 @@ let playRound = function (humanChoice, computerChoice) {
 humanChoice = humanChoice.toLowerCase();
 computerChoice = computerChoice.toLowerCase();
 
+if (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissors") {
+    console.log("Invalid move! Please enter Rock or Paper or Scissors!");
+    return;
+}
+
 if (humanChoice === computerChoice) {
     return "It's a tie";
 }
