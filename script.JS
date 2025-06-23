@@ -43,10 +43,10 @@ if (  (humanChoice === "rock" && computerChoice === "scissors")
    || (humanChoice === "scissors" && computerChoice == "paper")
    || (humanChoice === "paper" && computerChoice === "rock")) {
     humanScore++;
-    console.log(`YOU WIN! ${humanChoice} beats ${computerChoice}`);
+    console.log(`%c YOU WIN! ${humanChoice} beats ${computerChoice}`, "color: green; font-weight: bold;");
    } else {
     computerScore++;
-    console.log(`YOU LOSE! ${computerChoice} beats ${humanChoice}`);
+    console.log(`%c YOU LOSE! ${computerChoice} beats ${humanChoice}`, "color: red; font-weight: bold;");
    }
 }
 
