@@ -24,12 +24,9 @@ let humanScore = 0;
 let computerScore = 0;
 
 let playRound = function (humanChoice, computerChoice) {
-    if (!humanChoice || !computerChoice) {
-        console.log("Invalid move, round skipped!");
-    }
+     humanChoice = humanChoice.toLowerCase();
+     computerChoice = computerChoice.toLowerCase();
 
-humanChoice = humanChoice.toLowerCase();
-computerChoice = computerChoice.toLowerCase();
 
 if (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scissors") {
     console.log("Invalid move! Please enter Rock or Paper or Scissors!");
@@ -37,7 +34,8 @@ if (humanChoice !== "rock" && humanChoice !== "paper" && humanChoice !== "scisso
 }
 
 if (humanChoice === computerChoice) {
-    return "It's a tie";
+    console.log("It's a tie");
+    return;
 }
 if (  (humanChoice === "rock" && computerChoice === "scissors") 
    || (humanChoice === "scissors" && computerChoice == "paper")
